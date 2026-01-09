@@ -8,6 +8,7 @@ import { SectionArt2 } from "../components/SectionArt2";
 import { SectionMusic } from "../components/SectionMusic";
 import { SectionContact } from "../components/SectionContact";
 import { Footer } from "../components/Footer";
+import { SectionMusic2 } from "../components/SectionMusic2";
 
 
 export const Home = () => {
@@ -21,6 +22,7 @@ export const Home = () => {
             <NavBar/>
         {/* Main Content*/}
         <main>
+            <SectionMusic2/>
             <SectionArt2  />
             <SectionResume/>
             <SectionAbout/>

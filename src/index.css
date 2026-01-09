@@ -175,8 +175,6 @@
   text-align: center;
   font-size: 18px;
   background: transparent;
-
-  /* Center slide text vertically */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -184,8 +182,83 @@
 
 .swiper-slide img {
   display: block;
-  width: 60%;
-  height: 60%;
-  object-fit: contain;
-  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
+
+/* Main Gallery Swiper */
+.mySwiper2 {
+  height: 480px;
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.mySwiper2 .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Thumbs Gallery Swiper */
+.mySwiper-thumbs {
+  height: 100px;
+  padding: 10px 0;
+}
+
+/* Mobile responsive - closer spacing */
+@media (max-width: 640px) {
+  .mySwiper2 {
+    height: 280px;
+    margin-bottom: 15px;
+  }
+
+  .mySwiper-thumbs {
+    height: 60px;
+    padding: 4px 0;
+  }
+}
+
+.mySwiper-thumbs .swiper-slide {
+  opacity: 0.4;
+  cursor: pointer;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: opacity 0.3s ease;
+}
+
+.mySwiper-thumbs .swiper-slide-thumb-active {
+  opacity: 1;
+  border: 2px solid hsl(var(--primary));
+}
+
+.mySwiper-thumbs .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Swiper Navigation Arrows */
+.swiper-button-next,
+.swiper-button-prev {
+  color: hsl(var(--primary));
+  background: hsl(var(--card));
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
+}
+
