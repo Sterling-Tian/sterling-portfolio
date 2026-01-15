@@ -22,12 +22,12 @@ export const Home = () => {
             <NavBar/>
         {/* Main Content*/}
         <main>
-            <SectionMusic2/>
-            <SectionArt2  />
+            
+            
             <SectionResume/>
             <SectionAbout/>
-            <SectionArt/>
-            <SectionMusic/>
+            <SectionArt2  />
+            <SectionMusic2/>
             <SectionContact/>
         </main>
         {/* Footer*/}

@@ -18,11 +18,14 @@ export const SectionArt2 = () => {
     ];
 
     return (
-        <section id="art2" className="py-24 px-4 relative">
+        <section id="art2" className="pt-8 pb-24 px-4 relative">
             <div className="container mx-auto max-w-5xl">
                 <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-                    ART ART <span className="text-primary">ART </span>
+                    <span className="text-primary">ARTIST </span>
                 </h2>
+                 <p className="text-muted-foreground mb-6">
+                I have been drawing since I was 12. Making art has been very rewarding and I am very blessed to have a talent that is so easy to share. 
+                </p>
 
                 {/* Main Gallery Swiper */}
                 <Swiper

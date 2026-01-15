@@ -3,60 +3,76 @@ import { ArrowDown } from "lucide-react"
 export const SectionResume = () => {
     return (
     <section 
-        id="home"
-        className="relative min-h-screen flex flex-col items-center justify-center px-4"
+        id="resume"
+        className="relative min-h-screen flex flex-col items-center justify-center px-4 pt-15"
     >
-        <div className="container max-w-4xl mx-auto text-center z-10">
+        <div className="container max-w-6xl mx-auto text-center z-10">
             <div className="space-y-6">
                 {/* Image with text overlays */}
-                <div className="relative inline-block">
+                <div className="relative inline-block overflow-hidden rounded-lg">
                     <img
                         src="/projects/portrait.JPG"
                         alt="Sterling Tian portrait"
-                        className="w-full max-w-lg mx-auto rounded-lg"
-                        style={{ clipPath: 'inset(0 0 10% 0 round 0.5rem)' }}
+                        className="w-full max-w-xs sm:max-w-sm md:max-w-xl lg:max-w-3xl xl:max-w-4xl mx-auto"
+                        style={{
+                            transform: 'scale(1.2)',
+                            transformOrigin: 'center center',
+                            clipPath: 'inset(12% 0 22% 0 round 0.5rem)'
+                        }}
                     />
 
                     {/* Top-left text */}
-                    <div className="absolute top-5 left-8 text-left">
+                    <div
+                        className="absolute text-left"
+                        style={{ top: '7%', left: '20%' }}
+                    >
                         <span
-                            className="text-3xl md:text-5xl font-bold opacity-0 animate-fade-in"
+                            className="text-xl sm:text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold slide-in-left inline-block"
                             style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.8)' }}
                         >
-                            Howdy! 
+                            Howdy!
                         </span>
                     </div>
-                     <div className="absolute top-5 right-23 text-right">
+                    {/* Top-right text */}
+                    <div
+                        className="absolute text-right"
+                        style={{ top: '7%', right: '35%' }}
+                    >
                         <span
-                            className="text-3xl md:text-5xl font-bold opacity-0 animate-fade-in"
+                            className="text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-primary font-bold slide-in-right inline-block"
                             style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.8)' }}
                         >
-                             I am
+                            I am
                         </span>
                     </div>
 
                     {/* Bottom text */}
-                    <div className="absolute bottom-16 right-4 text-left">
+                    <div
+                        className="absolute text-right"
+                        style={{ bottom: '24%', right: '5%' }}
+                    >
                         <span
-                            className="text-4xl md:text-6xl font-bold text-primary opacity-0 animate-fade-in-delay-1"
+                            className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-bold slide-in-bottom inline-block"
                             style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.8)' }}
                         >
-                            Sterling Tian
+                            Sterling
+                            <span className="text-primary"> Tian</span>
                         </span>
                     </div>
                 </div>
 
-                <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-                    Hello this is filler text about me.
+                <p className="text-lg md:text-xl text-muted-foreground w-full max-w-xs sm:max-w-sm md:max-w-xl lg:max-w-3xl xl:max-w-4xl mx-auto opacity-0 animate-fade-in-delay-3 -mt-18">
+                    I am a professional data engineer, artist, and aspiring accordionist.
                 </p>
+
+                {/* Bouncing button */}
+                <div className="flex flex-col items-center animate-bounce pt-4">
+                    <span className="text-sm text-muted-foreground mb-2 text-primary">
+                        Let's goooo!
+                    </span>
+                    <ArrowDown className="h-5 w-5" />
+                </div>
             </div>
-        </div>
-{/* Bouncing button */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce" >
-            <span className="text-sm text-muted-foreground mb-2">
-                Let's goooo!
-            </span>
-            <ArrowDown className="h-5 w-5 text-primary"/>
         </div>
     </section>
 

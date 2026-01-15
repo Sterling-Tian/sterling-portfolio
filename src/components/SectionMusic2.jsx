@@ -27,11 +27,14 @@ export const SectionMusic2 = () => {
     ];
 
     return (
-        <section id="music2" className="py-24 px-4 relative">
+        <section id="music2" className="pt-8 pb-20 px-4 relative">
             <div className="container mx-auto max-w-5xl">
-                <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-                    My <span className="text-primary">Music</span>
+                <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">
+                    <span className="text-primary">Accordionist</span>
                 </h2>
+                 <p className="text-muted-foreground mb-6">
+                    I started playing music during the Covid-19 pandemic. Sharing my progress has been a side project of mine. 
+                </p>
 
                 {/* Main Video Swiper */}
                 <Swiper
