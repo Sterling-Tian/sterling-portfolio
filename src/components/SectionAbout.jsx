@@ -3,7 +3,7 @@ import { Code, Database, Handshake } from "lucide-react"
 
 export const SectionAbout = () =>{
     return(
-        <section id="about" className="py-24 px-4 relative">
+        <section id="about" className="pt-16 md:pt-16 lg:pt-24 px-4 relative">
             <div className="container mx-auto max-w-5xl">
                 <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
                     Data <span className="text-primary"> Engineering </span>
@@ -57,26 +57,26 @@ export const SectionAbout = () =>{
                                             I am Advanced Scrum Master certified and have worked as scrum master for multiple teams to provide value through iterative development.
                                         </p>
                                     </div>
-                                </div></div> 
+                                </div></div>
                         </div>
-                                                <p className="text-muted-foreground">
-                            Please feel free to download my resume if you'd like more details of my career!
-                        </p>
-                        <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
-                             <a
-                                href="#contact"
-                                className={cn("px-6 py-2 rounded-full border border-primary text-primary",
-                                "hover:bg-primary/10 transition-colors duration-300")}>
-                                Resume
-                            </a>
-                            
-                            <a href="#contact" className="cosmic-button">
-                                Contact
-                            </a>
+                </div>
 
-                           
-                        </div>
+                <div className="text-center mt-12">
+                    <p className="text-lg md:text-xl text-muted-foreground">
+                        Please feel free to download my resume if you'd like more details of my career!
+                    </p>
+                    <div className="flex flex-col sm:flex-row gap-4 pt-10 justify-center">
+                        <a
+                            href="#contact"
+                            className={cn("px-6 py-2 rounded-full border border-primary text-primary",
+                            "hover:bg-primary/10 transition-colors duration-300")}>
+                            Resume
+                        </a>
 
+                        <a href="#contact" className="cosmic-button">
+                            Contact
+                        </a>
+                    </div>
                 </div>
             </div>
 

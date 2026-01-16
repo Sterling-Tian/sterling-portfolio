@@ -4,7 +4,7 @@ export const SectionContact =() => {
     return(
         <section 
         id="contact"
-        className="py-24 px-4 relative bg-secondary/30">
+        className="pt-24 md:pt-32 lg:pt-40 pb-6 px-4 relative bg-secondary/30">
            <div className="container mx-auto max-w-5xl">
                 <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
                     Get In <span className="text-primary"> Touch</span>
@@ -51,9 +51,9 @@ export const SectionContact =() => {
                         </div>
                         
                     </div>
-                    <div className="pt-8">
+                    <div className="pt-16">
                         <h4>Connect With Me</h4>
-                        <div className="flex space-x-4 justify-center">
+                        <div className="flex space-x-4 justify-center py-4">
                             <a href="https://www.linkedin.com/in/sterlingtian/" target="_blank">
                                 <Linkedin/>
                             </a>

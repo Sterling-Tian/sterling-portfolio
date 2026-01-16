@@ -1,7 +1,7 @@
 
 import { StarBackground } from "../components/StarBackground";
 import { NavBar } from "../components/NavBar";
-import { SectionResume } from "../components/SectionResume";
+import { SectionHome} from "../components/SectionHome";
 import { SectionAbout } from "../components/SectionAbout";
 import { SectionArt } from "../components/SectionArt";
 import { SectionArt2 } from "../components/SectionArt2";
@@ -24,7 +24,7 @@ export const Home = () => {
         <main>
             
             
-            <SectionResume/>
+            <SectionHome/>
             <SectionAbout/>
             <SectionArt2  />
             <SectionMusic2/>

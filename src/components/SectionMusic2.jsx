@@ -27,7 +27,7 @@ export const SectionMusic2 = () => {
     ];
 
     return (
-        <section id="music2" className="pt-8 pb-20 px-4 relative">
+        <section id="music" className="pt-16 md:pt-16 lg:pt-24 pb-20 px-4 relative">
             <div className="container mx-auto max-w-5xl">
                 <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">
                     <span className="text-primary">Accordionist</span>

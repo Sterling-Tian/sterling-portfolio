@@ -4,10 +4,9 @@ import { X, Menu } from "lucide-react";
 
 const navItems = [
    
-    {name: "Resume", href: "#resume"},
+    {name: "Resume", href: "#about"},
     {name: "Art", href: "#art"},
     {name: "Music", href: "#music"},
-    {name: "About Me", href: "#about"},
     {name: "Contact", href: "#contact"},
 ];
 

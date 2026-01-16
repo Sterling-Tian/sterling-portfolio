@@ -1,10 +1,10 @@
 import { ArrowDown } from "lucide-react"
 
-export const SectionResume = () => {
+export const SectionHome = () => {
     return (
     <section 
-        id="resume"
-        className="relative min-h-screen flex flex-col items-center justify-center px-4 pt-15"
+        id="home"
+        className="relative min-h-screen flex flex-col items-center justify-center px-4 pt-8 sm:pt-16 md:pt-15"
     >
         <div className="container max-w-6xl mx-auto text-center z-10">
             <div className="space-y-6">
